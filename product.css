@@ -51,13 +51,24 @@
     padding-bottom: 20px;
 }
 
-#prodetails .single-pro-details select {
+#prodetails .single-pro-details .selection {
     display: block;
-    padding: 5px 10px;
+    padding: 10px;
     margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.selection option {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #fff;
 }
 
 #prodetails .single-pro-details input{
+    border: 1px solid #ccc;
     width: 50px;
     height: 47px;
     padding-left: 15px;
