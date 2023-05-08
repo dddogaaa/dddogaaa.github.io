@@ -215,7 +215,7 @@ button.white {
 }
 
 #feature-2 {
-    background-image: url(img/f.jpeg);
+    background-image: url(img/f1.webp);
 }
  
 #feature-3 {
@@ -236,6 +236,7 @@ button.white {
 }
 
 #product1 .pro {
+    height: 370px;
     width: 17%;
     min-width: 250px;
     padding: 10px 12px;
@@ -255,6 +256,7 @@ button.white {
 #product1 .pro img {
     width: 100%;
     border-radius: 20px;
+    height: 227.333px;
 }
 
 #product1 .pro .des {
