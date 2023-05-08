@@ -225,7 +225,6 @@ button.white {
     cursor: pointer;
 }
 
-
 #product1 {
     text-align: center;
     padding-top: 0px;
@@ -905,17 +904,16 @@ transform: rotate(-180deg);
     }
 
     #hero {
-        background-image: url(img/mobile-main.png);
-        padding: 0px 20px;
+        padding: 0px 10px;
         height: 500px;
     }
     #hero h2 {
-        padding: 40px 0px;
-        font-size: 30px;
+        padding: 10px 0px;
+        font-size: 23px;
     }
 
     #hero h1 {
-        font-size: 35px;
+        font-size: 33px;
     }
 
     #hero p {
