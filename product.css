@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height*/ 
+    font-family: 'Montserrat',sans-serif;
+}
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-pro-img{
+    width: 50%;
+    margin-right: 50px;
+}
+
+.small-img-group{
+    display:flex;
+    justify-content:space-between;
+}
+
+.small-img-col{
+    padding: 3% 0;
+    flex-basis: 30%;
+    cursor: pointer;
+}
+
+.listItems {
+    color: #465B52;
+    margin-left: 18px;
+}
+
+#prodetails .single-pro-details {
+    width: 50%;
+}
+
+#prodetails .single-pro-details h4{
+    padding: 20px 0 20px 0;
+}
+
+#prodetails .single-pro-details h2{
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+#prodetails .single-pro-details  ul{
+    padding-bottom: 20px;
+}
+
+#prodetails .single-pro-details select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+#prodetails .single-pro-details input{
+    width: 50px;
+    height: 47px;
+    padding-left: 15px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-pro-details input:focus{
+    outline: none;
+}
+
+#prodetails .single-pro-details button{
+    background-color: rgb(151, 124, 165);
+    color: #fff;
+    height: 47px;
+    transition: 0.5s ease;
+}
+
+#prodetails .single-pro-details button:hover{
+    background-color: rgb(55, 18, 60);
+}
+
+#prodetails .single-pro-details p{
+    line-height: 25px;
+}
+
+#prodetails .single-pro-details .button-desc {
+    display: none;
+}
+
+
+#slider {
+    min-height: 40vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: red;
+}
+
+.container {
+    max-width: 1120px;
+    width: 100%;
+    background-color: grey;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    width: 312px;
+}
+
+.card .image-box {
+    height: 200px;
+}
+
+.card .image-box img{
+    height: 100%;
+}
+
+.card .profile-details {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.card .profile-details span {
+    color: #606063;
+    font-size: 12px;
+}
+
+.card .profile-details h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+.card .profile-details h4 {
+    padding-top: 7px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+@media (max-width:477px) {
+
+    #prodetails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #prodetails .single-pro-img {
+        width: 100%;
+    }
+
+    #prodetails .single-pro-details {
+        width: 100%;
+    
+    }
+    #prodetails .single-pro-details h2 {
+        padding: 0px 0px;
+    }
+
+    #prodetails .single-pro-details .button-desc{
+        border: none;
+        background-color: transparent;
+        color: #151b18;
+        text-decoration:none;
+        font-size: 19.5px;
+        cursor: pointer;
+        position: relative;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+
+
+    #prodetails .single-pro-details .button-desc:after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #151b18;
+        transition: width 0.7s ease;
+    }
+
+    #prodetails .single-pro-details .button-desc:before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 50%;
+        height: 1px;
+        background-color: #151b18;
+        transition: width 0.9s ease;
+    }
+
+    #prodetails .single-pro-details .button-desc:hover {
+        background-color: transparent;
+    }
+
+    #prodetails .single-pro-details .button-desc:hover:before {
+        width: 0;
+    }
+
+    #prodetails .single-pro-details .button-desc:hover:after {
+        width: 100%;
+    }
+
+    #prodetails .single-pro-details .desc{
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.9s ease-out;
+    }
+
+    #prodetails .single-pro-details .active {
+        max-height: 400px;
+    }
+}
