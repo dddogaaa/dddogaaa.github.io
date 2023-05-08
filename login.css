@@ -392,8 +392,21 @@ form {
         left: 50%;
     }
 
+    .social-text {
+        margin: 0px;
+        padding: .7rem 0;
+        font-size: 1rem;
+      }
 
+      .social-media {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 0 0;
+      }
 
+      p {
+        margin: 10px 0px;
+      }
 }
 
 
