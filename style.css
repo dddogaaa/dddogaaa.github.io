@@ -202,8 +202,9 @@ button.white {
     justify-content: center;
     text-align: center;
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;
 }
+
 #feature .fe-box .bigger-p {
     color: rgb(247, 247, 247);
     font-family: MyFont, sans-serif;
@@ -212,6 +213,7 @@ button.white {
 
 #feature-1 {
     background-image: url(img/feature1.png);
+    cursor: pointer;
 }
 
 #feature-2 {
@@ -220,6 +222,7 @@ button.white {
  
 #feature-3 {
     background-image: url(img/fatures3.png);
+    cursor: pointer;
 }
 
 
