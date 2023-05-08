@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height*/ 
+    font-family: 'Montserrat',sans-serif;
+}
+
+#cart {
+    overflow-x: auto;
+}
+
+#cart table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td {
+    text-align: center;
+}
+
+#cart table td:nth-child(1) {
+    width: 100px;
+}
+#cart table td:nth-child(2) {
+    width: 150px;
+}
+#cart table td:nth-child(3) {
+    width: 250px;
+}
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 150px;
+}
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table td:nth-child(5) input:focus {
+    outline: none;
+}
+
+#cart table thead {
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0px;
+}
+
+#cart table tbody tr td {
+    padding: 16px;
+}
+
+#cart table tbody td {
+    font-size: 14.5px;
+}
+
+#cart table tbody td img {
+    border-radius: 15px;
+}
+
+#cart-add{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#coupon {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#coupon h3,
+#subtotal h3 {
+    padding-bottom: 15px;   
+}
+
+#coupon input {
+    padding: 10px 0px 10px 10px;
+    outline: none;
+    width: 60%;
+}
+
+#coupon button{
+    background-color: rgb(151, 124, 165);
+    color: #fff;
+    transition: 0.5s ease;
+    padding: 12px 20px;
+}
+
+#coupon button:hover {
+    background-color: rgb(55, 18, 60);
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal button{
+    background-color: rgb(151, 124, 165);
+    color: #fff;
+    transition: 0.5s ease;
+    padding: 12px 20px;
+}
+
+#subtotal button:hover {
+    background-color: rgb(55, 18, 60);
+}
+
+
+#subtotal table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td {
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+#subtotal table td .total{
+    font-weight: 900;
+}
+
+@media (max-width: 555px){
+    #cart-add{
+        flex-direction: column;
+    }
+
+    #coupon{
+        width: 100%;
+    }
+
+    #subtotal {
+        width: 100%;
+        padding: 20px;
+    }
+}
